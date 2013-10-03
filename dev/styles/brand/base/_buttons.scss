@@ -2,7 +2,7 @@
     $BUTTONS
 \*------------------------------------*/
 
-.button{
+%button{
 	@extend .btn;
 	@extend %transition-default;
 	/**
@@ -12,12 +12,15 @@
 	 */
 	@extend %no-select;
 	
+	margin-right: em(18) /* 18px */;
+		
 	background-color: $gray-light;
 	color: $gray-dark;
 	font-weight: 500;
 	text-align: center;
 	text-transform: capitalize;
 	letter-spacing: 0.0625em /* 1px letter spacing */;
+	line-height: 2.7;
 	
 	border: 2px solid lighten($cru-gray, 45%);
 	
@@ -35,21 +38,25 @@
     $BUTTON SIZES
 \*------------------------------------*/
 
-.button--small{
-	margin-right: em(18) /* 18px */;
+
+.button--default{
+	@extend %button;
 	
 	padding-left: em(18) /* 18px */; 
 	padding-right: em(18) /* 18px */;
-	
-	line-height: 2.7;
-}
-
-.button--mid{
-	
 }
 
 .button--large{
+	@extend %button;
+	@extend .btn--large;
 	
+	line-height: 3.3;
+}
+
+.button--huge{
+	@extend %button;
+	@extend .btn--huge;
+	line-height: 4;
 }
 
 

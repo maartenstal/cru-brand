@@ -33,7 +33,7 @@ body{
 		border-bottom: none;
     }
 
-	.type{
+	.type, .forms, .images, .buttons{
 		margin: 0 auto;
 	}
 
@@ -165,6 +165,7 @@ body{
 	padding-top: 18px;
 	padding-left: 18px;
 	padding-right: 18px;
+	padding-bottom: 18px;
 }
 
 .site-footer{
