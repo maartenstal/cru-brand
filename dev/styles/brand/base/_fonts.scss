@@ -2,7 +2,7 @@
     $FONTS
 \*------------------------------------*/
 /**
- * Freight Sans Fonts
+ * Freight Sans Font Family
  */
 @font-face { 
 	font-family: "Freight Sans Pro"; 
@@ -26,14 +26,12 @@
 }
 
 
+
+
+/**
+ * Leitura Roman Font Family
+ */
 @font-face {
 	font-family: 'Leitura Roman';
 	src: url('../fonts/Leitura-Roman.otf'); 
 }
-
-
-	//src: url('FreigSanPro.eot'); /* IE9 Compat Modes */
-	//src: url('FreigSanPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	//     url('FreigSanPro.woff') format('woff'), /* Modern Browsers */
-	//     url('FreigSanPro.ttf')  format('truetype'), /* Safari, Android, iOS */
-	//    url('FreigSanPro.svg#svgFontName') format('svg'); /* Legacy iOS */

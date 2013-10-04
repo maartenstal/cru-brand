@@ -67,6 +67,59 @@
     $BUTTON COLORS
 \*------------------------------------*/
 
-.button--gold{
+.button--primary{
 	@extend .gold;
+	@extend %text-white;
+		
+	border-color: darken($cru-primary, 10%);
+		
+	&:hover{
+		background-color: darken($cru-primary, 10%);	
+	}
+}
+
+.button--secondary{
+	@extend .orange;
+	@extend %text-white;
+		
+	border-color: darken($cru-secondary, 10%);
+		
+	&:hover{
+		background-color: darken($cru-secondary, 10%);	
+	}
+}
+
+.button--dark{
+	@extend .gray;
+	@extend %text-white;
+		
+	border-color: $gray-darker;
+		
+	&:hover{
+		background-color: $gray-darker;	
+	}
+}
+
+.button--accent{
+	@extend .blue-bright;
+	@extend %text-white;
+		
+	border-color: $cru-accent-dark;
+		
+	&:hover{
+		background-color: $cru-accent-dark;	
+	}
+}
+
+.disabled{
+	@extend .gray-lighter;
+    
+    cursor: text;
+    color: lighten($cru-gray, 40%);
+		
+	border-color: lighten($cru-gray, 45%);
+		
+	&:hover{
+		@extend .gray-lighter;
+	}
 }
