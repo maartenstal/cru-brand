@@ -1,0 +1,40 @@
+a{
+	@extend %transition-default;
+	
+	color: $base-font-color;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: $cru-accent-light;
+	
+	&:hover{
+		color: $cru-accent-light;
+	}
+}
+
+.link--headline{
+	border-bottom-color: transparent;
+	
+	&:hover{
+		border-bottom-color: $cru-accent-light;
+	}
+}
+
+.link--supplement{
+	@extend %inline-block-element; 
+	
+	color: $cru-accent-light;
+	
+	padding-right: 2px;
+	padding-left: 1px;
+	border-bottom-color: transparent;
+	
+	&:hover{
+		color: $cru-accent-dark;
+	}
+}
+
+.link__block{
+	@extend %block-element; 
+}
+
+

@@ -127,7 +127,7 @@
 				<!-- CRU FONTS -->
 				<div class="wrapper  pb8">
 					
-					<div class="portable--four-fifths  desk--six-tenths  centered">
+					<div class="portable--four-fifths  desk--six-tenths  centered  font-change">
 						<div class="grid">
 							
 						  <div class="area-title">
@@ -137,10 +137,10 @@
 						
 						  <div class="area-main  white">
 						  	<div class="grid__item  desk--three-tenths">
-						  	  <h1>Heading 1</h1>	
-									<h2>Heading 2</h2>
-									<h3>Heading 3</h3>
-									<h4>Heading 4</h4>
+						  	  <h1  title="h1">Heading 1</h1>	
+									<h2  title="h2">Heading 2</h2>
+									<h3  title="h3">Heading 3</h3>
+									<h4  title="h4">Heading 4</h4>
 						  	</div>
 						  	<div class="grid__item  desk--seven-tenths">
 						  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -165,25 +165,25 @@
 							
 						  <div class="area-title">
 						  	<h1>Buttons</h1>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							  <p>The "button--default" should be used in nearly every case, with the addition of a button color. Example class="button--default  button--dark".  For special cases you can use different size buttons.</p>
 						  </div>
 						
 						  <div class="area-main  white">
 						  	<div class="one-whole">
 									<h3>Button Sizes</h3>
-								  <button class="button--default">Button Default</button>
-									<button class="button--large">Button Large</button>
-									<button class="button--huge">Button Huge</button>
+								  <button class="button--small"  title='button--default.button--small'>Button Small</button>
+									<button class="button--default"  title="button--default.button--default">Button Default</button>
+									<button class="button--large"  title="button--default.button--large">Button Large</button>
 									
 						  	</div>
 								<hr class="hr  mt3  mb4">
 						  	<div class="one-whole">
 									<h3>Button Colors</h3>
-								  <button class="button--default  button--primary">Primary</button>
-								  <button class="button--default  button--secondary">Secondary</button>
-								  <button class="button--default  button--accent">Accent</button>
-								  <button class="button--default  button--dark">Dark</button>
-								  <button class="button--default  disabled">Disabled</button>
+								  <button class="button  button--primary"  title='button.button.button--primary'>Primary</button>
+								  <button class="button--default  button--secondary"  title='button.button--default.button--secondary'>Secondary</button>
+								  <button class="button  button--accent"  title='button.button.button--accent'>Accent</button>
+								  <button class="button--default  button--dark"  title='button.button--default.button--dark'>Dark</button>
+								  <button class="button disabled"  title='button.button.disabled'>Disabled</button>
 						  	</div>
 						
 						  </div>
@@ -193,6 +193,89 @@
 					
 				</div>
 				<!-- END BUTTONS -->
+				
+				<hr class="hr">
+				
+				<!-- LISTS -->
+				<div class="wrapper  pb8">
+					
+					<div class="portable--four-fifths  desk--six-tenths  centered">
+						<div class="grid">
+							
+						  <div class="area-title">
+						  	<h1>Lists</h1>
+							  <p></p>
+						  </div>
+						
+						  <div class="area-main  white">
+						  	<div class="one-whole" >
+									<h3>Unordered</h3>
+									  <ul class="nav  nav--stacked"  title='ul.nav.nav--stacked'>
+									    	<li>Chunky Monkey</li>
+									    	<li>Tutti Frutti</li>
+									    	<li>Rootin Tootin</li>
+									    	<li>Zach Attack</li>
+									  </ul>
+						  	</div>
+								<hr class="hr  mt3  mb4">
+						  	<div class="one-whole">
+									<h3>Ordered</h3>
+										<ol class="nav  nav--stacked  numbered-list"  title='ol.nav.nav--stacked.numbered-list'>
+											<li>Chunky Monkey</li>
+								    	<li>Tutti Frutti</li>
+								    	<li>Rootin Tootin</li>
+								    	<li>Zach Attack</li>
+										</ol>
+						  	</div>
+						
+						  </div>
+						
+					  </div>
+					</div>
+					
+				</div>
+				<!-- END LISTS -->
+				
+				<hr class="hr">
+				
+				<!-- LINKS -->
+				<div class="wrapper  pb8">
+					
+					<div class="portable--four-fifths  desk--six-tenths  centered">
+						<div class="grid">
+							
+						  <div class="area-title">
+						  	<h1>Links</h1>
+							  <p></p>
+						  </div>
+						
+						  <div class="area-main  white">
+								<div class="one-whole">
+									<h3>Headlines</h3>
+									<h2><a href=""  class="link--headline"  title='h2 a.link--headline'>I Said Good Day!</a></h2>
+									<p>Headline links should be used for articles and blog posts; should always be shown with a read more button:</p>
+									<button class="button--small"  title='button.button--small'>Read More &rarr;</button>
+						  	</div>
+								<hr class="hr  mt3  mb4">
+						
+						  	<div class="one-whole">
+									<h3>Inline</h3>
+									<p>Lorem ipsum <a href="#"  title='a'>dolar</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor <a href="#"  title='a'>incididunt</a> ut labore et dolore magna aliqua. </p>
+						  	</div>
+								<hr class="hr  mt3  mb4">
+						  	<div class="one-whole">
+									<h3>Supplemental</h3>
+									<p><a href="#"  class="link--supplement"  title='a.link--supplement'  title='a.link--supplement'>Work</a>, <a href="#"  class="link--supplement"  title='a.link--supplement'>School</a>, <a href="#"  class="link--supplement"  title='a.link--supplement'>Food</a>, <a href="#"  class="link--supplement"  title='a.link--supplement'>Kittens</a>, <a href="#"  class="link--supplement"  title='a.link--supplement'>Bluth's Banana Stand</a></p>
+									
+						  	</div>
+						
+						  </div>
+						
+					  </div>
+					</div>
+					
+				</div>
+				<!-- END LINKS -->
 				
 				<hr class="hr">
 				
@@ -248,29 +331,6 @@
 				
 				<hr class="hr">
 				
-				<!-- LINKS -->
-				<div class="wrapper  pb8">
-					
-					<div class="portable--four-fifths  desk--six-tenths  centered">
-						<div class="grid">
-							
-						  <div class="area-title">
-						  	<h1>Links</h1>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						  </div>
-						
-						  <div class="area-main  white">
-						  	<div class="grid__item  desk--four-tenths">
-						  	</div>
-						  	<div class="grid__item  desk--six-tenths">
-						  	</div>
-						  </div>
-						
-					  </div>
-					</div>
-					
-				</div>
-				<!-- END LINKS -->
 				
 				
 				<!--<footer class="site-footer  one-whole">

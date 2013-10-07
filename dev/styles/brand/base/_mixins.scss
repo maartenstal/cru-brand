@@ -8,6 +8,33 @@
 $browser-default: 16; /* Default */
 
 @function em($pixels, $default: $browser-default){
-  @return #{$pixels/$default}em
+  @return #{$pixels/$default}em;
+}
+
+/**
+ * Allows numbers to be set with css instead of html by default; this allows
+ * us to change the font family(and other things) of the number only
+ */
+@mixin auto-numbers($numbered-element, $sep, $counter: item, $nested-parent: false ){
+    $sel: ();
+    @if $nested-parent {
+        $sel: append($sel, unquote($nested-parent));
+
+        #{$nested-parent}{
+            list-style: none;
+            margin-left: 0;
+        }
+    }
+    $sel: append($sel, unquote('&'), comma);
+
+    #{$sel}{
+        counter-reset: #{$counter};
+        > #{$numbered-element}{
+            &:before{
+                counter-increment: #{$counter};
+                content: if($nested-parent, counters(#{$counter}, "#{$sep} ") "#{$sep} ", counter(#{$counter}) "#{$sep} ") ;
+            }
+        }
+    }
 }
 

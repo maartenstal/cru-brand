@@ -1,0 +1,15 @@
+/**
+ * 1) Allows for control over the number only of an ordered list
+ * 2) Have a numbered `ul` without the semantics implied by using an `ol`.
+ */
+/*ul*/.numbered-list{
+    @include auto-numbers(li, '.');
+    font-size: inherit;
+	
+	:before{
+		margin-right: 5px !important;
+		font-family: $numeral-font-family !important;
+		font-size: 95% !important;
+	}
+	
+}

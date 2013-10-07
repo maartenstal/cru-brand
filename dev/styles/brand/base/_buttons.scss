@@ -20,7 +20,7 @@
 	text-align: center;
 	text-transform: capitalize;
 	letter-spacing: 0.0625em /* 1px letter spacing */;
-	line-height: 2.7;
+	line-height: 2.6;
 	
 	border: 2px solid lighten($cru-gray, 45%);
 	
@@ -39,11 +39,23 @@
 \*------------------------------------*/
 
 
-.button--default{
+.button--default, .button{
 	@extend %button;
 	
 	padding-left: em(18) /* 18px */; 
 	padding-right: em(18) /* 18px */;
+	
+	font-size: 90%;
+}
+
+.button--small{
+	@extend %button;
+	
+	padding-left: em(14) /* 14px */;
+	padding-right: em(14) /* 14px */;
+	
+	font-size: 80%;
+	line-height: 2;
 }
 
 .button--large{
@@ -53,11 +65,11 @@
 	line-height: 3.3;
 }
 
-.button--huge{
+/*.button--huge{
 	@extend %button;
 	@extend .btn--huge;
 	line-height: 4;
-}
+}*/
 
 
 
