@@ -1,0 +1,3 @@
+[submodule "dev/styles/inuit.css"]
+	path = dev/styles/inuit
+	url = https://github.com/thejamesdempsey/inuit.css.git
