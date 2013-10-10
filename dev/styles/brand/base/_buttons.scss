@@ -16,7 +16,8 @@
 		
 	background-color: $gray-light;
 	color: $gray-dark;
-	font-weight: 500;
+	font-size: 90%;
+	font-weight: 600;
 	text-align: center;
 	text-transform: capitalize;
 	letter-spacing: 0.0625em /* 1px letter spacing */;
@@ -45,7 +46,11 @@
 	padding-left: em(18) /* 18px */; 
 	padding-right: em(18) /* 18px */;
 	
-	font-size: 90%;
+	font-size: 95%;
+	
+	&.disabled{
+		@extend %button-disabled;
+	}
 }
 
 .button--small{
@@ -54,8 +59,13 @@
 	padding-left: em(14) /* 14px */;
 	padding-right: em(14) /* 14px */;
 	
-	font-size: 80%;
+	font-size: 85%;
 	line-height: 2;
+	
+	&.disabled{
+		@extend %button-disabled;
+	}
+	
 }
 
 .button--large{
@@ -63,16 +73,12 @@
 	@extend .btn--large;
 	
 	line-height: 3.3;
+	
+	&.disabled{
+		@extend %button-disabled;
+	}
+	
 }
-
-/*.button--huge{
-	@extend %button;
-	@extend .btn--huge;
-	line-height: 4;
-}*/
-
-
-
 
 
 /*------------------------------------*\
@@ -90,21 +96,10 @@
 	}
 }
 
-.button--secondary{
-	@extend .orange;
-	@extend %text-white;
-		
-	border-color: darken($cru-secondary, 10%);
-		
-	&:hover{
-		background-color: darken($cru-secondary, 10%);	
-	}
-}
-
-.button--dark{
+.button--secondary, .button--dark{
 	@extend .gray;
 	@extend %text-white;
-		
+	
 	border-color: $gray-darker;
 		
 	&:hover{
@@ -120,18 +115,5 @@
 		
 	&:hover{
 		background-color: $cru-accent-dark;	
-	}
-}
-
-.disabled{
-	@extend .gray-lighter;
-    
-    cursor: text;
-    color: lighten($cru-gray, 40%);
-		
-	border-color: lighten($cru-gray, 45%);
-		
-	&:hover{
-		@extend .gray-lighter;
 	}
 }

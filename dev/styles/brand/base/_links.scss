@@ -4,7 +4,7 @@ a{
 	color: $base-font-color;
 	border-bottom-width: 1px;
 	border-bottom-style: dotted;
-	border-bottom-color: $cru-accent-light;
+	border-bottom-color: $cru-accent-dark;
 	
 	&:hover{
 		color: $cru-accent-light;
@@ -35,6 +35,11 @@ a{
 
 .link__block{
 	@extend %block-element; 
+}
+
+.disabled{
+	cursor: text;
+    color: lighten($cru-gray, 40%);
 }
 
 

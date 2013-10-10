@@ -3,11 +3,11 @@
 \*------------------------------------*/
 
 %transition-default{
-	@include vendor(transition, all .2s ease);
+	//@include vendor(transition, all .2s ease);
 }
 
 %no-select{
-	@include vendor(user-select, none);
+	//@include vendor(user-select, none);
 }
 
 %numeral{
@@ -25,3 +25,17 @@
 %inline-block-element{
 	display: inline-block;
 }
+
+%button-disabled{
+	@extend .gray-lighter;
+	@extend .disabled;
+
+	border-color: lighten($cru-gray, 45%);
+
+	&:hover{
+		@extend .gray-lighter;
+	}
+}
+
+@include vertical-calc(1, 12) {}
+

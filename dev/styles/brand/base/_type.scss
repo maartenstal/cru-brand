@@ -9,3 +9,37 @@ h1, h2, h3{
 h4{
 	font-weight: 200;
 }
+
+.island{
+	opacity: 0.8;
+	font-style: italic;
+	font-size: 90%;
+}
+
+blockquote{
+	padding-left: 18px;
+	border-left: 7px solid rgba(0,0,0,0.1);
+	text-indent: -0.4em;
+	quotes: "“" "”";
+	position: relative;
+	
+	&:after{
+		content: '';
+		display: block;
+		height: 100%;
+		width: 1px;
+		background: $cru-primary;
+		position: absolute;
+		top: 0;
+		left: -8px;
+	}
+	
+}
+
+.serif{
+	font-family: $serif-font-family !important;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 80%;
+	
+}
