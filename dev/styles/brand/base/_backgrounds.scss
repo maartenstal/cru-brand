@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    $BACKGROUNDS
+\*------------------------------------*/
+/**
+ * Easy background variables
+ */
+
+.bg--gold{ @extend .gold; @extend %text-white; }
+
+.bg--white{@extend .white; }
+
+.bg--orange{ @extend .orange; @extend %text-white; }
+
+.bg-blue-deep{ @extend .blue-deep; @extend %text-white; }
+
+.bg--blue-bright{ @extend .blue-bright; @extend %text-white; }
+
+.bg--gray{ @extend .gray; @extend %text-white; }
+
+.bg--gray-dark{ @extend .gray-dark; @extend %text-white;}
+
+.bg--gray-darker{ @extend .gray-darker; @extend %text-white; }
+
+.bg--gray-light{ @extend .gray-light; }
+
+.bg--gray-lighter{ @extend .gray-lighter; }

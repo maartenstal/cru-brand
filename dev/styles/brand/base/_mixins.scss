@@ -53,33 +53,30 @@ $browser-default: 16; /* Default */
 				margin-top: ($grid * $i)/16 + em !important;
 				@content
             }
+
 			.mb#{$i}{
 				margin-bottom: ($grid * $i) + px !important;
 				margin-bottom: ($grid * $i)/16 + em !important;
 				@content
-				
-				
             }
+
 			.mtb#{$i}{
 				@extend .mt#{$i};
 				@extend .mb#{$i};
-				
 			}
 			
 			.pt#{$i}{
 				padding-top: ($grid * $i) + px !important;
 				padding-top: ($grid * $i)/16 + em !important;
 				@content
-				
-				
             }
+
 			.pb#{$i}{
 				padding-bottom: ($grid * $i) + px !important;
 				padding-bottom: ($grid * $i)/16 + em !important;
-				@content
-				
-				
+				@content	
             }
+
 			.ptb#{$i}{
 				@extend .pt#{$i};
 				@extend .pb#{$i};
