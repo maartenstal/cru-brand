@@ -1,0 +1,34 @@
+.image{
+	@extend %transition-default;
+	
+	display: inline-block;
+	height: auto;
+	width: 100%;
+	
+	margin: 5px;
+}
+
+.image--rounded{
+	@include vendor(border-radius, 6px);
+}
+
+.image--circle{
+	@extend %circle;
+}
+
+.image--thumbnail{
+	@extend .ptb1;
+	@extend .white;
+	
+	padding-left: 6px;
+	padding-right: 6px;
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #dddddd;
+	
+	@include vendor(border-radius, 3px);
+	
+	
+	
+}

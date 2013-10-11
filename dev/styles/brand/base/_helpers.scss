@@ -1,6 +1,51 @@
 /*------------------------------------*\
     $HELPERS
 \*------------------------------------*/
+.gold{
+	background-color: $cru-primary;
+}
+
+.white{
+	background-color: #ffffff;
+}
+
+.orange{
+	background-color: $cru-secondary;
+}
+
+.blue-deep{
+	background-color: $cru-accent-dark;
+}
+
+.blue-bright{
+    background-color: $cru-accent-light;
+}
+
+.gray{
+    background-color: $cru-gray;
+}
+
+.gray-darker{
+    background-color: $gray-darker;
+}
+
+.gray-dark{
+	background-color: $gray-dark;
+}
+
+.gray-light{
+	background-color: $gray-light;	
+}
+
+.gray-lighter{
+	background-color: $gray-lighter;
+}
+
+.center-block{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
 
 %transition-default{
 	//@include vendor(transition, all .2s ease);
@@ -35,6 +80,10 @@
 	&:hover{
 		@extend .gray-lighter;
 	}
+}
+
+%circle{
+	border-radius: 50%;
 }
 
 @include vertical-calc(1, 12) {}
