@@ -75,6 +75,22 @@
 	display: inline-block;
 }
 
+%inline-element{
+	display: inline;
+}
+
+.pull-left{
+	float: left;
+}
+
+%pull-right{
+	float: right;
+}
+
+%no-float{
+	float: none;
+}
+
 %button-disabled{
 	@extend .gray-lighter;
 	@extend .disabled;
@@ -89,6 +105,9 @@
 %circle{
 	border-radius: 50%;
 }
+
+
+
 
 @include vertical-calc(1, 12) {}
 
