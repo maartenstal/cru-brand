@@ -1,0 +1,184 @@
+.form{
+	font-size: 16px;
+	
+	fieldset {
+		@extend .pb4;
+
+		border-bottom-color: #eeeeee;
+
+		&:last-child{
+			border-bottom: none;
+			margin-bottom: 0;
+		}
+
+		&:hover .form-text, &:hover textarea{
+			border-color: $cru-gray;
+		}
+	}
+	
+	label{
+		font-weight: 400;
+	}
+	
+	.check label {
+		display: inline;
+		font-weight: normal;
+	}
+	
+	.radio ul {
+		list-style: none;
+		
+		& > li > label{
+			display: inline;
+			font-weight: 300;
+		}
+	}
+	
+}
+
+.message--attached + .form{
+	padding-left: 24px;
+	padding-right: 24px;
+	
+	border-width: 2px;
+	border-style: solid;
+	border-color: #efefef;
+	border-top-color: transparent;
+	
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+
+form fieldset input.form-text,
+form fieldset textarea {
+	@extend %transition-slower;
+	
+	display: block;
+	width: 100%;
+	padding: 5px;
+	
+	font-size: 14px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #dddddd;
+	background-color: #ffffff;
+	border-radius: 4px;
+	outline: none;
+
+	@include vendor(box-shadow, inset 0 1px 2px rgba(0,0,0,.05));
+	
+	&:focus{
+		border-color: $cru-accent-light;
+	}
+
+}
+
+
+form fieldset textarea {
+	height: 175px;
+	resize: none;
+}
+
+form fieldset select {
+	min-width: 25%;
+	margin: 0;
+}
+
+form fieldset.radio ul {
+	margin-top: 5px;
+	margin-left: 0;
+}
+
+form fieldset.radio ul li {
+	margin-bottom: 5px;
+}
+
+form fieldset.radio ul li:last-child {
+	margin: 0;
+}
+
+
+
+input[type="checkbox"]{
+	margin-right: 5px;
+	font-size: 80px;
+}
+
+.form-help{
+	@extend %transition-slower;
+	
+	opacity: 0;
+	position: relative;
+	top: -1.3;
+	display: block;
+	max-height: 0;
+	
+	font-size: 15px;
+	overflow: hidden;
+	word-wrap: break-word;
+	margin-top: 0;
+	
+	color: lighten($cru-gray, 15%);
+	
+	
+	
+}
+
+.form-text:focus, textarea:focus{
+	
+	
+	& + .form-help{
+		opacity: 0.8;
+		max-height: 200px;
+	}
+}
+
+
+@media screen and (min-width: 750px){
+	form fieldset input.form-text,
+	form fieldset textarea{
+		width: 80%;
+	}
+	
+	form fieldset label{
+		float: left;
+		width: 20%;
+		margin: 4px 0 5px 0;
+		font-weight: bold;
+	}
+	
+	form fieldset.check label{
+		display: inline;
+		float: none;
+		width: auto;
+		font-weight: normal;
+	}
+	
+	form fieldset.radio ul li label {
+		display: inline;
+		float: none;
+		width: auto;
+		font-weight: normal;
+	}
+	
+	form fieldset select {
+		min-width: 25%;
+		margin: 0;
+	}
+	form fieldset.radio ul {
+		margin: 5px 0 0 20%;
+	}
+	form fieldset.radio ul li {
+		margin: 0 0 5px 0;
+		list-style: none;
+		
+	}
+	form fieldset.radio ul li:last-child {
+		margin: 0;
+	}
+	
+	textarea + .form-help, .form-actions, .check label{
+		margin-left: 20%;
+	}
+}

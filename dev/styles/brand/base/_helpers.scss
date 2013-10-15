@@ -48,14 +48,18 @@
 }
 
 %transition-default{
-	//@include vendor(transition, all .2s ease);
+	@include vendor(transition, all .2s ease);
+}
+
+%transition-slower{
+	@include vendor(transition, all .3s ease);
 }
 
 %no-select{
-	//@include vendor(user-select, none);
+	@include vendor(user-select, none);
 }
 
-%numeral{
+%numeral, .num{
 	font-family: $numeral-font-family;
 }
 
